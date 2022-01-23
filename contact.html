@@ -4,31 +4,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://kit.fontawesome.com/384b0bb467.js" crossorigin="anonymous"></script>
+
     <title>Sanctuary Helpers - Contact Us</title>
 </head>
 <body>
-    <header>
-        <div class="navFlex">
-            <!-- Navigation Bar -->
-            <nav class="navBar" id="home">
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./index.html#about">About</a></li>
-                    <li><a href="./blog.html">Blog</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                </ul>
-            </nav>
-    
-            <div class="logo">
-                <h3>Sanctuary Helpers</h3>
+    <header class="headerContact">
+        <!-- Start: wrapper -->
+        <div class="wrapper">
+            <div class="navFlex">
+
+                <!-- Navigation Bar -->
+                <nav class="navBar" id="home">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./index.html#about">About</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <!-- End: navBar -->
+        
+                <div class="smallLogo">
+                    <h3>Sanctuary Helpers</h3>
+                </div>
+            </div>
+            <!-- End: navFlex -->
+
+            <h1>Get In Touch</h1>
             </div>
         </div>
-    
-        <div class="pageTitle" <h1>Blog</h1>
-        </div>
+        <!-- End: wrapper -->
     </header>
 
+    <!-- Start Contact and Wrapper -->
+    <section class="contact wrapper">
+
+        <!-- Start: Message Form -->
+        <form>
+            <div class="formFlex" <label for="name" class="sr-only">Name</label>
+                <input type="text" id="name" placeholder="Name">
+        
+                <label for="email" class="sr-only">Email</label>
+                <input type="email" id="email" placeholder="Email">
+            </div>
+        
+            <label for="message" class="sr-only">Message us</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+        
+            <button>Submit</button>
+        </form>
+        <!-- End: Message Form -->
+
+        <!-- Start: Contact Info -->
+        <div class="contactInfo">
+            <div class="socialsFlex">
+                <ul> 
+                    <li>
+                        <a href="https://www.facebook.com/" alt="Facebook icon and link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" alt="Instagram icon and link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" alt="Twitter icon and link.">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.whatsapp.com/" alt="WhatsApp icon and link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="contactDetails">
+                    <p>123 - 456 - 7890</p>
+                    <p>123 Queen Street West,</p>
+                    <p>Unit 10</p>
+                    <p>Toronto, Ontario</p>
+                    <p>M5V2D5</p>
+                </div>
+
+            </div>
+            <!-- End: socialsFlex -->
+        </div>
+         <!-- End: contactInfo -->
+    </section>
+    <!-- End: Contact and Wrapper -->
 
 
+    <footer>
+        <p>Copyright © 2019 HackerYou</p>
+    </footer>
 </body>
 </html>

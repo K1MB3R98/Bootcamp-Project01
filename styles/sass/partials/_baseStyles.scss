@@ -1,0 +1,14 @@
+.wrapper {
+    max-width: 1260px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+button {
+    background-color: $secondary;
+    border: none;
+    padding: 10px 20px 5px;
+    &.formButton {
+        width: 100%;
+    }
+}

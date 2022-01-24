@@ -1,0 +1,99 @@
+html {
+    font-size: 125%;
+}
+
+body {
+    font-family: $bodyFont;
+    font-size: 1rem;
+    color: $black;
+}
+
+h1 {
+    font-family: $h1Font;
+    font-size: 3.4rem;
+    line-height: 3.2rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2,
+h3,
+h4, 
+button
+ {
+    font-family: $headingsFont;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h5,
+p {
+    font-family: $bodyFont;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.125rem;
+}
+
+h3 {
+    font-size: 1.65rem;
+    line-height: 2.9rem;
+    letter-spacing: 0.105rem; 
+}
+
+h4 {
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.06rem;
+}
+
+h5 {
+    font-size: 1rem;
+    line-height: 1.45rem;
+    letter-spacing: 0.07rem;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.1rem;
+    &.dateItalics {
+        font-style: italic;
+    }
+    &.dateAllCaps {
+        text-transform: uppercase;
+    }
+
+}
+
+button {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.05rem;
+    color: $white;
+}
+
+ul,
+li,
+a,
+input {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    &.recentPostList {
+        padding-left: 40px;
+        list-style-type: disc;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+}

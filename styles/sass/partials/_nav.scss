@@ -1,0 +1,17 @@
+.navBar {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    span {
+        visibility: hidden;
+    }
+    h4 {
+        padding-top: 7px;
+    }
+    ul {
+        width: 25rem;
+        display: flex;
+        justify-content: space-between;
+    }
+}

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumar+One&family=Kumar+One+Outline&family=Lato:wght@400;700&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -226,6 +227,145 @@ html {
   overflow: hidden;
 }
 
+html {
+  font-size: 125%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  color: #151514;
+}
+
+h1 {
+  font-family: "Kumar One Outline", cursive;
+  font-size: 3.4rem;
+  line-height: 3.2rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h2,
+h3,
+h4,
+button {
+  font-family: "Kumar One", cursive;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h5,
+p {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2.2rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.125rem;
+}
+
+h3 {
+  font-size: 1.65rem;
+  line-height: 2.9rem;
+  letter-spacing: 0.105rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+  line-height: 1.2rem;
+  letter-spacing: 0.06rem;
+}
+
+h5 {
+  font-size: 1rem;
+  line-height: 1.45rem;
+  letter-spacing: 0.07rem;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.1rem;
+}
+p.dateItalics {
+  font-style: italic;
+}
+p.dateAllCaps {
+  text-transform: uppercase;
+}
+
+button {
+  font-size: 1rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.05rem;
+  color: #F5F5F5;
+}
+
+ul,
+li,
+a,
+input {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+ul.recentPostList {
+  padding-left: 40px;
+  list-style-type: disc;
+}
+
+a {
+  text-decoration: none;
+  color: #151514;
+}
+
+.wrapper {
+  max-width: 1260px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+button {
+  background-color: #065635;
+  border: none;
+  padding: 10px 20px 5px;
+}
+button.formButton {
+  width: 100%;
+}
+
+.navBar {
+  width: 100%;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.navBar span {
+  visibility: hidden;
+}
+.navBar h4 {
+  padding-top: 7px;
+}
+.navBar ul {
+  width: 25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .headerHome {
   background-image: url(../assets/header-home.jpg);
   background-position: center;
@@ -234,5 +374,7 @@ html {
 }
 
 footer {
-  color: cornflowerblue;
+  color: #F5F5F5;
+  background-color: #151514;
+  text-align: center;
 }

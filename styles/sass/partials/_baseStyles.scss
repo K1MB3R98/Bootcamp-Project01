@@ -7,8 +7,18 @@
 button {
     background-color: $secondary;
     border: none;
+    margin-top: 20px;
     padding: 10px 20px 5px;
     &.formButton {
         width: 100%;
     }
+}
+
+// Image Drop-Shadows
+.shadowLeft {
+    box-shadow: -20px 20px $primary;
+}
+
+.shadowRight {
+    box-shadow: 20px 20px $primary;
 }

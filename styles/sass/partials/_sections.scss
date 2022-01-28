@@ -1,23 +1,38 @@
-main {
-    section {
-        margin-bottom: 50px;
+/* Home Page Sections */
+// Section: Home > Discover
+.discover {
+    padding-top: 250px;
+    display: flex;
+    .discoverText {
+        width: 70%;
+        height: auto;
+        margin: 0 75px 100px 0;
     }
 }
 
 
-/* Home Page Sections */
-// Section: Home > Discover
-.discover {
-    background-color: $solidWhite;
-}
+
 
 // Section: Home > Gallery
+.gallery {
+    background-color: $tertiary;
+}
+
+
 
 // Section: Home > Links
 
+
+
+
 // Section: Home > About
+.about {
+    background-color: $tertiary;
+}
 
 // Section: Home > Search
+
+
 
 
 
@@ -25,7 +40,12 @@ main {
 /* Blog Page Sections */
 // Section: Blog > Posts
 
+
+
+
 // Section: Blog > Comments
+
+
 
 
 /* Contact Page Styles */

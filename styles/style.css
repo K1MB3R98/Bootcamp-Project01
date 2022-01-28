@@ -334,10 +334,21 @@ a {
 button {
   background-color: #065635;
   border: none;
+  margin-top: 20px;
   padding: 10px 20px 5px;
 }
 button.formButton {
   width: 100%;
+}
+
+.shadowLeft {
+  -webkit-box-shadow: -20px 20px #F8FB05;
+          box-shadow: -20px 20px #F8FB05;
+}
+
+.shadowRight {
+  -webkit-box-shadow: 20px 20px #F8FB05;
+          box-shadow: 20px 20px #F8FB05;
 }
 
 .navBar {
@@ -366,53 +377,70 @@ button.formButton {
           justify-content: space-between;
 }
 
-header {
-  margin-bottom: 25px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .headerHome {
   background-image: url(../assets/header-home.jpg);
+  background-repeat: no-repeat;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
 }
 .headerHome h1 {
   width: 200px;
-  margin-top: 50px;
+  margin: 5vh 0 5vh 0;
 }
 
 .headerHomeImg2 {
-  width: 52%;
-  padding: 25px 0 0 0;
-}
-
-.headerHome img {
   width: 100%;
+  height: auto;
+}
+.headerHomeImg2 img {
+  width: 55%;
 }
 
 .headerBlog {
   background-image: url(../assets/blog-image.jpg);
-  height: 60vh;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
 }
 .headerBlog h1 {
-  margin-top: 200px;
+  margin-top: 18vh;
 }
 
 .headerContact {
   background-image: url(../assets/contact-image.jpg);
-  height: 100vh;
-  max-width: 90%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
 }
-
-main section {
-  margin-bottom: 50px;
+.headerContact h1 {
+  margin-top: 18vh;
 }
 
 /* Home Page Sections */
 .discover {
-  background-color: #F5F5F5;
+  padding-top: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.discover .discoverText {
+  width: 70%;
+  height: auto;
+  margin: 0 75px 100px 0;
+}
+
+.gallery {
+  background-color: #E0FDDF;
+}
+
+.about {
+  background-color: #E0FDDF;
 }
 
 /* Blog Page Sections */

@@ -366,13 +366,57 @@ button.formButton {
           justify-content: space-between;
 }
 
-.headerHome {
-  background-image: url(../assets/header-home.jpg);
+header {
+  margin-bottom: 25px;
   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
 }
 
+.headerHome {
+  background-image: url(../assets/header-home.jpg);
+  width: 100%;
+  height: 100vh;
+}
+.headerHome h1 {
+  width: 200px;
+  margin-top: 50px;
+}
+
+.headerHomeImg2 {
+  width: 52%;
+  padding: 25px 0 0 0;
+}
+
+.headerHome img {
+  width: 100%;
+}
+
+.headerBlog {
+  background-image: url(../assets/blog-image.jpg);
+  height: 60vh;
+}
+.headerBlog h1 {
+  margin-top: 200px;
+}
+
+.headerContact {
+  background-image: url(../assets/contact-image.jpg);
+  height: 100vh;
+  max-width: 90%;
+}
+
+main section {
+  margin-bottom: 50px;
+}
+
+/* Home Page Sections */
+.discover {
+  background-color: #F5F5F5;
+}
+
+/* Blog Page Sections */
+/* Contact Page Styles */
 footer {
   color: #F5F5F5;
   background-color: #151514;

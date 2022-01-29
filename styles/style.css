@@ -422,28 +422,192 @@ button.formButton {
   margin-top: 18vh;
 }
 
+body {
+  background-color: #E0FDDF;
+}
+
 /* Home Page Sections */
 .discover {
+  background-color: #F5F5F5;
+}
+.discover .wrapper {
   padding-top: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .discover .discoverText {
-  width: 70%;
+  width: 65%;
   height: auto;
-  margin: 0 75px 100px 0;
+  margin: 0 75px 150px 0;
+}
+.discover .discoverImg {
+  margin-left: 25px;
+}
+.discover .discoverImg img {
+  height: 60%;
 }
 
 .gallery {
-  background-color: #E0FDDF;
+  padding: 75px 0;
+}
+.gallery ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.gallery ul li {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: auto;
+  width: calc((100% / 3) - 30px);
+}
+.gallery ul li img {
+  width: 100%;
+  height: auto;
+}
+
+.links {
+  background-color: #F5F5F5;
+  border: 2px solid greenyellow;
+}
+.links h3 {
+  margin-top: 10px;
+}
+.links p {
+  margin-bottom: 25px;
+}
+
+.links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 5px dashed purple;
+}
+.links ul li {
+  border: 2px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.links ul li i {
+  background-color: #F8FB05;
+  height: 2.2rem;
+  min-width: 2.2rem;
+  margin: 10px 15px;
+  padding: 5px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.8rem;
 }
 
 .about {
-  background-color: #E0FDDF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.about h3 {
+  margin-top: 75px;
+}
+.about button {
+  margin-bottom: 75px;
+}
+.about .newLocations {
+  width: 40%;
+}
+.about .newLocations .newLocationsText {
+  text-align: right;
+}
+.about .newLocations .newLocationsText h3,
+.about .newLocations .newLocationsText p {
+  padding-left: 25%;
+}
+.about .groupPrograms {
+  width: 40%;
+}
+.about .groupPrograms h3,
+.about .groupPrograms p {
+  padding-right: 25%;
+}
+
+.bannerImage img {
+  width: 100%;
+}
+
+.search {
+  background-color: #F5F5F5;
+  text-align: center;
+}
+.search h3 {
+  padding: 150px 0 10px;
+}
+.search button {
+  margin-bottom: 150px;
+}
+.search p {
+  padding: 0 75px;
+  text-align: left;
 }
 
 /* Blog Page Sections */
+.blogFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 100px;
+}
+.blogFlex .blogEntry {
+  width: 65%;
+  background-color: #F5F5F5;
+  position: relative;
+  padding-top: 400px;
+}
+.blogFlex .blogEntry img {
+  width: 98%;
+  position: absolute;
+  top: -250px;
+}
+.blogFlex .blogEntry .blogText {
+  border: 0 5px 5px 0 solid #F8FB05;
+  padding: 100px 100px 20px 100px;
+}
+.blogFlex .blogEntry .blogText p {
+  margin-top: 20px;
+}
+.blogFlex aside {
+  width: 20%;
+}
+.blogFlex aside .asideImg {
+  text-align: right;
+}
+.blogFlex aside img {
+  width: 94%;
+}
+.blogFlex aside .asideText {
+  background-color: #F8FB05;
+  padding: 0 25px 25px 25px;
+}
+.blogFlex aside .asideText h3 {
+  padding-top: 25px;
+}
+.blogFlex aside .asideText ul {
+  padding-left: 25px;
+}
+
 /* Contact Page Styles */
 footer {
   color: #F5F5F5;

@@ -1,12 +1,28 @@
+body {
+    background-color: $tertiary;
+}
+
+
+
 /* Home Page Sections */
 // Section: Home > Discover
 .discover {
+    background-color: $white;
+    .wrapper{
     padding-top: 250px;
     display: flex;
+    justify-content: space-between;
+    }
     .discoverText {
-        width: 70%;
+        width: 65%;
         height: auto;
-        margin: 0 75px 100px 0;
+        margin: 0 75px 150px 0;
+    }
+    .discoverImg {
+        margin-left: 25px;
+        img {
+            height: 60%;
+        }
     }
 }
 
@@ -15,23 +31,110 @@
 
 // Section: Home > Gallery
 .gallery {
-    background-color: $tertiary;
+    padding: 75px 0;
+    ul {
+        display: flex;
+        justify-content: space-between;
+
+        li {
+            flex-wrap: wrap;
+            height: auto;
+            width: calc((100% / 3) - 30px);
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
 }
 
 
-
 // Section: Home > Links
+.links {
+    background-color: $white;
+    border: 2px solid greenyellow;
+    h3 {
+        margin-top: 10px;
+    }
+    p {
+        margin-bottom: 25px;
+    }
+}
 
+.links ul {
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+    border: 5px dashed purple;
+    li {
+        border: 2px solid red;
+        display: flex;
+        i {
+            background-color: $primary;
+            height: 2.2rem;
+            min-width: 2.2rem;
+            margin: 10px 15px;
+            padding: 5px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 1.8rem;
+        }
+    }
+}
 
 
 
 // Section: Home > About
 .about {
-    background-color: $tertiary;
+    display: flex;
+    justify-content: space-between;
+    h3 {
+        margin-top: 75px;
+    }
+    button {
+        margin-bottom: 75px;
+    }
+    .newLocations {
+        width: 40%;
+        .newLocationsText {
+            text-align: right;
+            h3, 
+            p  {
+            padding-left: 25%;
+            }
+        }
+    }    
+    .groupPrograms {
+        width: 40%;
+        h3,
+        p {
+            padding-right: 25%;
+        }
+    }
 }
 
-// Section: Home > Search
 
+// Section: Home > Banner Image
+.bannerImage img {
+    width: 100%;
+}
+
+
+// Section: Home > Search
+.search {
+    background-color: $white;
+    text-align: center;
+    h3 {
+        padding: 150px 0 10px;
+    }
+    button {
+        margin-bottom: 150px;
+    }
+    p {
+        padding: 0 75px;
+        text-align: left;
+    }
+}
 
 
 
@@ -39,7 +142,48 @@
 
 /* Blog Page Sections */
 // Section: Blog > Posts
-
+.blogFlex {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    .blogEntry {
+        width: 65%;
+        background-color: $white;
+        position: relative;
+        padding-top: 400px;
+        img {
+            width: 98%;
+            position: absolute;
+            top: -250px;
+        }
+        .blogText {
+            border: 0 5px 5px 0 solid $primary;
+            padding: 100px 100px 20px 100px;
+            p {
+                margin-top: 20px;
+            }
+        }
+    }
+    aside {
+        width: 20%;
+        .asideImg {
+            text-align: right;
+        }
+        img {
+            width: 94%;
+        }
+        .asideText {
+            background-color: $primary;
+            padding: 0 25px 25px 25px;
+            h3 {
+                padding-top: 25px;
+            }
+            ul {
+                padding-left: 25px;
+            }
+        }           
+    }
+}
 
 
 

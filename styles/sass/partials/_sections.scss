@@ -247,14 +247,25 @@ body {
     width: 28%;
     margin: 125px 0 200px 0;
     i {
+        height: 2rem;
+        width: 2rem;
+        margin: 5px;
+        padding-top:0.2rem;
+        text-align: center;
         color: $secondary;
-        margin-right: 20px;
         font-size: 1.5rem;
+        transition: 0.3s;
+        &:hover,
+        &:focus {
+            font-size: 2rem;
+            cursor: pointer;
+        }
     }
     .socialsFlex {
         display: flex;
     }
     .contactDetails {
+        padding-left: 15px;
         p:first-child {
             margin: 10px 0;
         }

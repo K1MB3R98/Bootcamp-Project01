@@ -719,14 +719,27 @@ body {
   margin: 125px 0 200px 0;
 }
 .contactInfo i {
+  height: 2rem;
+  width: 2rem;
+  margin: 5px;
+  padding-top: 0.2rem;
+  text-align: center;
   color: #065635;
-  margin-right: 20px;
   font-size: 1.5rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.contactInfo i:hover, .contactInfo i:focus {
+  font-size: 2rem;
+  cursor: pointer;
 }
 .contactInfo .socialsFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.contactInfo .contactDetails {
+  padding-left: 15px;
 }
 .contactInfo .contactDetails p:first-child {
   margin: 10px 0;

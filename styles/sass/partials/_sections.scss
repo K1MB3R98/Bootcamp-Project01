@@ -52,23 +52,21 @@ body {
 // Section: Home > Links
 .links {
     background-color: $white;
-    border: 2px solid greenyellow;
     h3 {
         margin-top: 10px;
     }
     p {
         margin-bottom: 25px;
     }
-}
-
-.links ul {
-    display: flex;
-    flex-wrap: wrap;
-    // justify-content: space-between;
-    border: 5px dashed purple;
-    li {
-        border: 2px solid red;
+    ul {
+        padding: 75px 0 100px 0;
         display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        li {
+        width: calc(50% - 20px);
+        display: flex;
+        }
         i {
             background-color: $primary;
             height: 2.2rem;
@@ -81,6 +79,7 @@ body {
         }
     }
 }
+
 
 
 
@@ -103,12 +102,21 @@ body {
             padding-left: 25%;
             }
         }
+        img {
+            margin-top: -50px;
+        }
     }    
     .groupPrograms {
         width: 40%;
+        position: relative;
         h3,
         p {
             padding-right: 25%;
+        }
+        img {
+            position: absolute;
+            left: 0;
+            bottom: -30px;
         }
     }
 }
@@ -139,26 +147,29 @@ body {
 
 
 
-
 /* Blog Page Sections */
 // Section: Blog > Posts
 .blogFlex {
     display: flex;
     justify-content: space-between;
-    padding-top: 100px;
+    .blogImgRelative {
+        // height: 550px;
+        width: 100%;
+        position: relative;
+    }
     .blogEntry {
         width: 65%;
         background-color: $white;
         border-right: 5px solid $primary;
         border-bottom: 5px solid $primary;
-        padding-top: 400px;
         img {
-            width: 98%;
-            position: absolute;
-            top: -250px;
+            width: calc(100% - 20px);
+            // position: absolute;
+            // top: -150px;
+            margin-top: -15%;
         }
         .blogText {
-            padding: 100px 100px 20px 100px;
+            padding: 50px 100px 20px 100px;
             p {
                 margin-top: 20px;
             }
@@ -166,14 +177,17 @@ body {
     }
     aside {
         width: 20%;
+        height: 75%;
+        margin-top: 150px;
+        background-color: $primary;
         .asideImg {
             text-align: right;
         }
         img {
             width: 94%;
+            margin-top: -20px;
         }
         .asideText {
-            background-color: $primary;
             padding: 0 25px 25px 25px;
             h3 {
                 padding-top: 25px;
@@ -188,12 +202,11 @@ body {
 
 // Section: Blog > Comments
 .comments {
-    width: 60%;
-    h3 {
-        margin: 50px 0;
-    }
+    width: 65%;
+    padding: 50px 100px 20px 50px;
     .commentFlex {
         display: flex;
+        margin-top: 25px;
     }
     p {
         margin: 0 0 10px 30px;
@@ -209,3 +222,41 @@ body {
 
 
 /* Contact Page Styles */
+// Contact Form
+.contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactForm {
+    width: 65%;
+    form {
+        width: 90%;
+        background-color: $white;
+        margin: -175px 0 0 100px;
+        padding: 75px;
+        input,
+        textarea {
+            background-color: $white;
+            
+        }
+    }
+}
+
+.contactInfo {
+    width: 28%;
+    margin: 125px 0 200px 0;
+    i {
+        color: $secondary;
+        margin-right: 20px;
+        font-size: 1.5rem;
+    }
+    .socialsFlex {
+        display: flex;
+    }
+    .contactDetails {
+        p:first-child {
+            margin: 10px 0;
+        }
+    }
+}

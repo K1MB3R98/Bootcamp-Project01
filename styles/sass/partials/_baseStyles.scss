@@ -6,38 +6,48 @@
 
 button {
     background-color: $secondary;
-    border: none;
+    border: 2px solid transparent;
     margin-top: 20px;
     padding: 10px 20px 5px;
+    transition: 0.3s;
     &.formButton {
         width: 100%;
+    }
+    &:hover,
+    &:focus {
+        background-color: $white;
+        border: 2px solid $secondary;
+        color: $secondary;
+        cursor: pointer;
     }
 }
 
 form {
     width: 100%;
-    border: 2px solid red;
     margin-bottom: 75px;
     .formFlex {
         padding-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
     }
     input,
     textarea {
         background-color: $tertiary;
         border: 1px solid $secondary;
         box-sizing: border-box;
-        padding: 20px 0 20px 20px;
+        margin-bottom: 10px;
+        padding: 30px 10px 20px 30px;
     }
     input {
-        width: calc(50% - 50px);
+        width: calc(50% - 30px);
         border: none;
         border-bottom: 1px solid $secondary;
-        margin: 0 20px 5px 0;
 
     }
     textarea {
         resize: none;
         width: 100%;
+        height: 250px;
     }
 }
 

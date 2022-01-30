@@ -294,7 +294,6 @@ p.dateItalics {
   font-style: italic;
 }
 p.dateAllCaps {
-  color: red;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -335,21 +334,34 @@ a {
 
 button {
   background-color: #065635;
-  border: none;
+  border: 2px solid transparent;
   margin-top: 20px;
   padding: 10px 20px 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 button.formButton {
   width: 100%;
 }
+button:hover, button:focus {
+  background-color: #F5F5F5;
+  border: 2px solid #065635;
+  color: #065635;
+  cursor: pointer;
+}
 
 form {
   width: 100%;
-  border: 2px solid red;
   margin-bottom: 75px;
 }
 form .formFlex {
   padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 form input,
 form textarea {
@@ -357,17 +369,18 @@ form textarea {
   border: 1px solid #065635;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 20px 0 20px 20px;
+  margin-bottom: 10px;
+  padding: 30px 10px 20px 30px;
 }
 form input {
-  width: calc(50% - 50px);
+  width: calc(50% - 30px);
   border: none;
   border-bottom: 1px solid #065635;
-  margin: 0 20px 5px 0;
 }
 form textarea {
   resize: none;
   width: 100%;
+  height: 250px;
 }
 
 .shadowLeft {
@@ -393,9 +406,6 @@ form textarea {
 .navBar span {
   visibility: hidden;
 }
-.navBar h4 {
-  padding-top: 7px;
-}
 .navBar ul {
   width: 25rem;
   display: -webkit-box;
@@ -404,6 +414,15 @@ form textarea {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+.navBar a {
+  border-bottom: 4px solid transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.navBar a:hover, .navBar a:focus {
+  border-bottom: 4px solid #F8FB05;
+  cursor: pointer;
 }
 
 .headerHome {
@@ -504,7 +523,6 @@ body {
 
 .links {
   background-color: #F5F5F5;
-  border: 2px solid greenyellow;
 }
 .links h3 {
   margin-top: 10px;
@@ -512,22 +530,24 @@ body {
 .links p {
   margin-bottom: 25px;
 }
-
 .links ul {
+  padding: 75px 0 100px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  border: 5px dashed purple;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .links ul li {
-  border: 2px solid red;
+  width: calc(50% - 20px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.links ul li i {
+.links ul i {
   background-color: #F8FB05;
   height: 2.2rem;
   min-width: 2.2rem;
@@ -562,12 +582,21 @@ body {
 .about .newLocations .newLocationsText p {
   padding-left: 25%;
 }
+.about .newLocations img {
+  margin-top: -50px;
+}
 .about .groupPrograms {
   width: 40%;
+  position: relative;
 }
 .about .groupPrograms h3,
 .about .groupPrograms p {
   padding-right: 25%;
+}
+.about .groupPrograms img {
+  position: absolute;
+  left: 0;
+  bottom: -30px;
 }
 
 .bannerImage img {
@@ -597,37 +626,41 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 100px;
+}
+.blogFlex .blogImgRelative {
+  width: 100%;
+  position: relative;
 }
 .blogFlex .blogEntry {
   width: 65%;
   background-color: #F5F5F5;
   border-right: 5px solid #F8FB05;
   border-bottom: 5px solid #F8FB05;
-  padding-top: 400px;
 }
 .blogFlex .blogEntry img {
-  width: 98%;
-  position: absolute;
-  top: -250px;
+  width: calc(100% - 20px);
+  margin-top: -15%;
 }
 .blogFlex .blogEntry .blogText {
-  padding: 100px 100px 20px 100px;
+  padding: 50px 100px 20px 100px;
 }
 .blogFlex .blogEntry .blogText p {
   margin-top: 20px;
 }
 .blogFlex aside {
   width: 20%;
+  height: 75%;
+  margin-top: 150px;
+  background-color: #F8FB05;
 }
 .blogFlex aside .asideImg {
   text-align: right;
 }
 .blogFlex aside img {
   width: 94%;
+  margin-top: -20px;
 }
 .blogFlex aside .asideText {
-  background-color: #F8FB05;
   padding: 0 25px 25px 25px;
 }
 .blogFlex aside .asideText h3 {
@@ -638,15 +671,14 @@ body {
 }
 
 .comments {
-  width: 60%;
-}
-.comments h3 {
-  margin: 50px 0;
+  width: 65%;
+  padding: 50px 100px 20px 50px;
 }
 .comments .commentFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 25px;
 }
 .comments p {
   margin: 0 0 10px 30px;
@@ -659,6 +691,47 @@ body {
 }
 
 /* Contact Page Styles */
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contactForm {
+  width: 65%;
+}
+.contactForm form {
+  width: 90%;
+  background-color: #F5F5F5;
+  margin: -175px 0 0 100px;
+  padding: 75px;
+}
+.contactForm form input,
+.contactForm form textarea {
+  background-color: #F5F5F5;
+}
+
+.contactInfo {
+  width: 28%;
+  margin: 125px 0 200px 0;
+}
+.contactInfo i {
+  color: #065635;
+  margin-right: 20px;
+  font-size: 1.5rem;
+}
+.contactInfo .socialsFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contactInfo .contactDetails p:first-child {
+  margin: 10px 0;
+}
+
 footer {
   color: #F5F5F5;
   background-color: #151514;

@@ -45,29 +45,32 @@
     </header>
 
     <main>
-        <!-- Start Contact and Wrapper -->
-        <section class="contact wrapper">
+        <!-- Start: Contact and Wrapper -->
+        <section class="contact">
 
-            <!-- Start: Message Form -->
-            <form class="shadowRight">
-                <div class="formFlex" <label for="name" class="sr-only">Name</label>
-                    <input type="text" id="name" placeholder="Name">
-            
-                    <label for="email" class="sr-only">Email</label>
-                    <input type="email" id="email" placeholder="Email">
-                </div>
-            
-                <label for="message" class="sr-only">Message us</label>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-            
-                <button class="formButton">Submit</button>
-            </form>
-            <!-- End: Message Form -->
+            <!-- Start: Contact Form -->
+            <div class="contactForm">
+                <form class="shadowRight">
+                    <div class="formFlex">
+                        <label for="name" class="sr-only">Name</label>
+                        <input type="text" id="name" placeholder="NAME">
+                
+                        <label for="email" class="sr-only">Email</label>
+                        <input type="email" id="email" placeholder="EMAIL">
+                    </div>
+                
+                    <label for="message" class="sr-only">Message us</label>
+                    <textarea name="message" id="message" placeholder="MESSAGE"></textarea>
+                
+                    <button class="formButton">Submit</button>
+                </form>
+            </div>
+            <!-- End: Contact Form -->
 
             <!-- Start: Contact Info -->
             <div class="contactInfo">
-                <div class="socialsFlex">
-                    <ul> 
+                <div>
+                    <ul class="socialsFlex"> 
                         <li>
                             <a href="https://www.facebook.com/" alt="Facebook icon and link">
                                 <i class="fab fa-facebook-f"></i>
@@ -91,6 +94,7 @@
                     </ul>
 
                     <div class="contactDetails">
+                        <p>info@email.com</p>
                         <p>123 - 456 - 7890</p>
                         <p>123 Queen Street West,</p>
                         <p>Unit 10</p>

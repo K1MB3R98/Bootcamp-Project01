@@ -294,7 +294,9 @@ p.dateItalics {
   font-style: italic;
 }
 p.dateAllCaps {
+  color: red;
   text-transform: uppercase;
+  font-weight: 700;
 }
 
 button {
@@ -338,6 +340,33 @@ button {
   padding: 10px 20px 5px;
 }
 button.formButton {
+  width: 100%;
+}
+
+form {
+  width: 100%;
+  border: 2px solid red;
+  margin-bottom: 75px;
+}
+form .formFlex {
+  padding-bottom: 20px;
+}
+form input,
+form textarea {
+  background-color: #E0FDDF;
+  border: 1px solid #065635;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px 0 20px 20px;
+}
+form input {
+  width: calc(50% - 50px);
+  border: none;
+  border-bottom: 1px solid #065635;
+  margin: 0 20px 5px 0;
+}
+form textarea {
+  resize: none;
   width: 100%;
 }
 
@@ -573,7 +602,8 @@ body {
 .blogFlex .blogEntry {
   width: 65%;
   background-color: #F5F5F5;
-  position: relative;
+  border-right: 5px solid #F8FB05;
+  border-bottom: 5px solid #F8FB05;
   padding-top: 400px;
 }
 .blogFlex .blogEntry img {
@@ -582,7 +612,6 @@ body {
   top: -250px;
 }
 .blogFlex .blogEntry .blogText {
-  border: 0 5px 5px 0 solid #F8FB05;
   padding: 100px 100px 20px 100px;
 }
 .blogFlex .blogEntry .blogText p {
@@ -606,6 +635,27 @@ body {
 }
 .blogFlex aside .asideText ul {
   padding-left: 25px;
+}
+
+.comments {
+  width: 60%;
+}
+.comments h3 {
+  margin: 50px 0;
+}
+.comments .commentFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.comments p {
+  margin: 0 0 10px 30px;
+}
+.comments .commentText {
+  margin-bottom: 50px;
+}
+.comments img {
+  padding-top: 10px;
 }
 
 /* Contact Page Styles */

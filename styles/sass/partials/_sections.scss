@@ -149,7 +149,8 @@ body {
     .blogEntry {
         width: 65%;
         background-color: $white;
-        position: relative;
+        border-right: 5px solid $primary;
+        border-bottom: 5px solid $primary;
         padding-top: 400px;
         img {
             width: 98%;
@@ -157,7 +158,6 @@ body {
             top: -250px;
         }
         .blogText {
-            border: 0 5px 5px 0 solid $primary;
             padding: 100px 100px 20px 100px;
             p {
                 margin-top: 20px;
@@ -186,9 +186,25 @@ body {
 }
 
 
-
 // Section: Blog > Comments
-
+.comments {
+    width: 60%;
+    h3 {
+        margin: 50px 0;
+    }
+    .commentFlex {
+        display: flex;
+    }
+    p {
+        margin: 0 0 10px 30px;
+    }
+    .commentText {
+        margin-bottom: 50px;
+    }
+    img {
+        padding-top:10px;
+    }
+}
 
 
 

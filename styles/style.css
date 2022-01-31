@@ -350,39 +350,6 @@ button:hover, button:focus {
   cursor: pointer;
 }
 
-form {
-  width: 100%;
-  margin-bottom: 75px;
-}
-form .formFlex {
-  padding-bottom: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-form input,
-form textarea {
-  background-color: #E0FDDF;
-  border: 1px solid #065635;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin-bottom: 10px;
-  padding: 30px 10px 20px 30px;
-}
-form input {
-  width: calc(50% - 30px);
-  border: none;
-  border-bottom: 1px solid #065635;
-}
-form textarea {
-  resize: none;
-  width: 100%;
-  height: 250px;
-}
-
 .shadowLeft {
   -webkit-box-shadow: -20px 20px #F8FB05;
           box-shadow: -20px 20px #F8FB05;
@@ -584,6 +551,7 @@ body {
 }
 .about .newLocations img {
   margin-top: -50px;
+  width: 100%;
 }
 .about .groupPrograms {
   width: 40%;
@@ -597,6 +565,7 @@ body {
   position: absolute;
   left: 0;
   bottom: -30px;
+  width: 100%;
 }
 
 .bannerImage img {
@@ -606,12 +575,10 @@ body {
 .search {
   background-color: #F5F5F5;
   text-align: center;
+  padding: 150px 0;
 }
 .search h3 {
-  padding: 150px 0 10px;
-}
-.search button {
-  margin-bottom: 150px;
+  padding-left: 10px;
 }
 .search p {
   padding: 0 75px;
@@ -649,6 +616,7 @@ body {
 }
 .blogFlex aside {
   width: 20%;
+  min-width: 225px;
   height: 75%;
   margin-top: 150px;
   background-color: #F8FB05;
@@ -745,8 +713,194 @@ body {
   margin: 10px 0;
 }
 
+form {
+  width: 100%;
+  margin-bottom: 75px;
+}
+form .formFlex {
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+form input,
+form textarea {
+  background-color: #E0FDDF;
+  border: 1px solid #065635;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 10px;
+  padding: 30px 10px 20px 30px;
+}
+form input {
+  width: calc(50% - 30px);
+  border: none;
+  border-bottom: 1px solid #065635;
+}
+form textarea {
+  resize: none;
+  width: 100%;
+  height: 250px;
+}
+
 footer {
   color: #F5F5F5;
   background-color: #151514;
   text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .wrapper {
+    width: 80%;
+  }
+
+  form .formFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  form input,
+form textarea {
+    width: 100%;
+  }
+
+  .headerHome {
+    height: 100vh;
+  }
+
+  .headerHomeImg2 {
+    display: none;
+  }
+
+  .discover .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    width: 100%;
+    padding-top: 0;
+  }
+  .discover .discoverText {
+    width: 80%;
+    margin: 75px auto;
+    text-align: right;
+  }
+  .discover .discoverImg {
+    margin-left: 0px;
+  }
+  .discover .discoverImg img {
+    width: 50%;
+    height: auto;
+    -webkit-box-shadow: 20px 20px #F8FB05;
+            box-shadow: 20px 20px #F8FB05;
+  }
+
+  .comments {
+    margin: 0 auto;
+    padding: 50px 0 20px 0;
+    width: 100%;
+  }
+
+  .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .contact .contactForm {
+    width: 80%;
+  }
+  .contact .contactForm form {
+    width: 100%;
+    margin-left: 0;
+  }
+  .contact .contactInfo {
+    width: 300px;
+    margin: 100px 0 75px 10%;
+  }
+}
+@media (max-width: 840px) {
+  .links ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 70%;
+    padding-bottom: 50px;
+  }
+  .links ul li {
+    width: 100%;
+  }
+  .links ul p {
+    padding-bottom: 40px;
+  }
+
+  .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about button {
+    margin-bottom: 20px;
+  }
+  .about .newLocations {
+    width: 100%;
+  }
+  .about .newLocations .newLocationsText {
+    padding-right: 100px;
+  }
+  .about .newLocations img {
+    width: 70%;
+  }
+  .about .groupPrograms {
+    width: 100%;
+    margin: 50px 0 325px 100px;
+  }
+  .about .groupPrograms img {
+    width: 70%;
+    bottom: -415px;
+    left: 150px;
+  }
+
+  .bannerImage img {
+    margin-top: 75px;
+  }
+
+  .search {
+    padding: 100px 0;
+  }
+
+  .blogFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .blogFlex aside {
+    display: none;
+  }
+  .blogFlex .blogEntry {
+    width: 85%;
+  }
+}
+@media (max-width: 680px) {
+  .navBar ul {
+    visibility: hidden;
+  }
+  .navBar span h5 {
+    visibility: visible;
+    margin-top: 20px;
+  }
+  .navBar ul.slideOutNav {
+    background-color: #E0FDDF;
+  }
 }

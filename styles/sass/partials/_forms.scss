@@ -1,0 +1,28 @@
+form {
+    width: 100%;
+    margin-bottom: 75px;
+    .formFlex {
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    input,
+    textarea {
+        background-color: $tertiary;
+        border: 1px solid $secondary;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        padding: 30px 10px 20px 30px;
+    }
+    input {
+        width: calc(50% - 30px);
+        border: none;
+        border-bottom: 1px solid $secondary;
+
+    }
+    textarea {
+        resize: none;
+        width: 100%;
+        height: 250px;
+    }
+}

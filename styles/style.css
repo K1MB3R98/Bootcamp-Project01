@@ -370,10 +370,20 @@ button:hover, button:focus {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.navBar span {
+.navBar span,
+.navBar .dropDown {
   visibility: hidden;
 }
-.navBar ul {
+.navBar h5 a {
+  border-bottom: 4px solid transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.navBar h5 a:hover, .navBar h5 a:focus {
+  border-bottom: 4px solid #F8FB05;
+  cursor: pointer;
+}
+.navBar .fullSizeMenu {
   width: 25rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -381,15 +391,6 @@ button:hover, button:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-.navBar a {
-  border-bottom: 4px solid transparent;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-.navBar a:hover, .navBar a:focus {
-  border-bottom: 4px solid #F8FB05;
-  cursor: pointer;
 }
 
 .headerHome {
@@ -570,6 +571,8 @@ body {
 
 .bannerImage img {
   width: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 .search {
@@ -793,7 +796,7 @@ form textarea {
     margin-left: 0px;
   }
   .discover .discoverImg img {
-    width: 50%;
+    width: 80%;
     height: auto;
     -webkit-box-shadow: 20px 20px #F8FB05;
             box-shadow: 20px 20px #F8FB05;
@@ -828,6 +831,57 @@ form textarea {
   }
 }
 @media (max-width: 840px) {
+  .navBar {
+    position: relative;
+  }
+  .navBar .fullSizeMenu {
+    visibility: hidden;
+  }
+  .navBar .dropDown {
+    visibility: visible;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    display: inline-block;
+  }
+  .navBar .dropDownContent {
+    display: none;
+    background-color: #F5F5F5;
+    min-width: 110px;
+    padding: 10px 20px;
+    -webkit-box-shadow: -10px 10px #F8FB05;
+            box-shadow: -10px 10px #F8FB05;
+    z-index: 1;
+  }
+  .navBar .dropDownContent a {
+    display: block;
+    padding: 5px 0;
+  }
+  .navBar .dropDownContent a:hover,
+.navBar .dropDownContent a:focus {
+    background-color: #F5F5F5;
+  }
+  .navBar .dropDown:hover .dropDownContent {
+    display: block;
+  }
+  .navBar .dropDown:hover i {
+    background-color: #E0FDDF;
+    padding: 10px 90px 10px 20px;
+    -webkit-box-shadow: -10px 10px #F8FB05;
+            box-shadow: -10px 10px #F8FB05;
+  }
+
+  .gallery ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .gallery ul li {
+    width: 100%;
+    padding: 30px;
+  }
+
   .links ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -866,9 +920,9 @@ form textarea {
     margin: 50px 0 325px 100px;
   }
   .about .groupPrograms img {
-    width: 70%;
-    bottom: -415px;
-    left: 150px;
+    width: 75%;
+    bottom: -400px;
+    left: 125px;
   }
 
   .bannerImage img {
@@ -892,15 +946,92 @@ form textarea {
     width: 85%;
   }
 }
-@media (max-width: 680px) {
-  .navBar ul {
-    visibility: hidden;
+@media (max-width: 600px) {
+  h3 {
+    font-size: 1.2rem;
   }
-  .navBar span h5 {
-    visibility: visible;
-    margin-top: 20px;
+
+  .headerHome,
+.headerBlog,
+.headerContact {
+    height: 50vh;
   }
-  .navBar ul.slideOutNav {
-    background-color: #E0FDDF;
+  .headerHome h1,
+.headerBlog h1,
+.headerContact h1 {
+    font-size: 2.6rem;
+    margin-top: 5vh;
+  }
+
+  .contactForm form {
+    margin: -175px 0 0 100px;
+    padding: 50px 60px;
+  }
+
+  .about .groupPrograms img {
+    width: 80%;
+    top: 540px;
+    left: 30px;
+  }
+}
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .headerHome h1,
+.headerBlog h1,
+.headerContact h1 {
+    font-size: 1.8rem;
+  }
+
+  .links li {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .links li i {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    font-size: 1.5rem;
+  }
+
+  .groupPrograms img {
+    width: 100%;
+    top: 450px;
+  }
+  .groupPrograms .bannerImage img {
+    border: 2ps solid blue;
+    margin-top: 0;
+  }
+
+  .blogFlex {
+    width: 95%;
+  }
+  .blogFlex .blogEntry {
+    width: 100%;
+  }
+  .blogFlex .blogEntry .blogText {
+    padding: 50px 50px;
+  }
+
+  .comments .commentImg {
+    margin-bottom: 20px;
+  }
+  .comments p {
+    margin-left: 0;
+  }
+  .comments .commentFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .contactForm form {
+    margin: -100px 0 0 100px;
+    padding: 50px 40px;
   }
 }

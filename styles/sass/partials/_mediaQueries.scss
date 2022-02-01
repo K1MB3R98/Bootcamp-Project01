@@ -37,7 +37,7 @@
         .discoverImg {
             margin-left: 0px;
             img {
-                width: 50%;
+                width: 80%;
                 height: auto;
                 box-shadow: 20px 20px $primary;
             }
@@ -74,9 +74,67 @@
 }
 
 
-// Devices with screens 800px and smaller
+// Devices with screens 840px and smaller
 @media (max-width: 840px) {
+    // Drop-Down Nav Bar
+    .navBar {
+       position: relative;
+
+        .fullSizeMenu {
+            visibility: hidden;
+        }
+
+        .dropDown {
+            visibility: visible;
+            position: absolute;
+            top: 20px;
+            right: 0;
+            display: inline-block;
+        }
+
+        .dropDownContent {
+            display: none;
+            background-color: $white;
+            min-width: 110px;
+            padding: 10px 20px;
+            box-shadow: -10px 10px $primary;
+            z-index: 1;
+        }
+
+        .dropDownContent a {
+            display: block;
+            padding: 5px 0;
+        }
+
+        .dropDownContent a:hover,
+        .dropDownContent a:focus {
+            background-color: $white;
+        }
+
+        .dropDown:hover .dropDownContent {
+            display: block;
+        }
+
+        .dropDown:hover i {
+            background-color: $tertiary;
+            padding: 10px 90px 10px 20px;
+            box-shadow: -10px 10px $primary;
+        }
+    }
+    
+    
     // Home Page
+    .gallery {
+        ul {
+            flex-direction: column;
+            li {
+                width: 100%;
+                padding: 30px;
+            }
+        }
+
+    }
+
     .links {
         ul {
         flex-direction: column;
@@ -109,9 +167,9 @@
             width: 100%;
             margin: 50px 0 325px 100px;
             img {
-                width: 70%;
-                bottom: -415px;
-                left: 150px;
+                width: 75%;
+                bottom: -400px;
+                left: 125px;
             }
         }
     }
@@ -123,6 +181,8 @@
     .search {
         padding: 100px 0;
     }
+
+
 
     // Blog Page
     .blogFlex {
@@ -137,26 +197,99 @@
 }
 
 
-// Devices with screens smaller than 680px
-@media (max-width: 680px) {
-   .navBar {
-        ul {
-            visibility: hidden;
-        }
 
-        span h5 {
-            visibility: visible;
-            margin-top: 20px;
-        }
 
-       ul.slideOutNav {
-           background-color: $tertiary;
+// Devices with screens smaller than 600px
+@media (max-width: 600px) {
+    h3 {
+        font-size: 1.2rem;
+    }
+
+   .headerHome,
+   .headerBlog,
+   .headerContact {
+       height: 50vh;
+        h1 {
+            font-size: 2.6rem;
+            margin-top: 5vh;
         }
-           
+    }
+
+    // Forms
+    .contactForm form{
+        margin: -175px 0 0 100px;
+        padding: 50px 60px;
+    } 
+
+    .about .groupPrograms img {
+        width:80%;
+        top: 540px;
+        left: 30px;
+    }
+}
+    
+
+// Devices with screens smaller than 480px {
+@media (max-width: 480px) { 
+    h2 {
+        font-size: 1.6rem;
+    }
+
+   .headerHome,
+   .headerBlog,
+   .headerContact {
+        h1 {
+            font-size: 1.8rem;
+        }
+    }
+
+    // Home Page
+    .links li {
+        flex-direction: column;
+        i {
+            width: 50px;
+            height: 50px;
+            margin: 0 auto;
+            font-size: 1.5rem;
+        }
+    }
+        
+    .about .groupPrograms img {
+        top: 650px;
+        left: 30px;
+    }
+}
+}
+
+
+    // Blog Page
+    .blogFlex {
+        width:95%;
+        .blogEntry {
+            width: 100%;
+            .blogText {
+                padding: 50px 50px;
+            }
+        }
+    }
+
+    .comments {
+        .commentImg {
+            margin-bottom: 20px;
+        }
+        p {
+            margin-left: 0;
+        }
+        .commentFlex {
+            flex-direction: column;
+        }
     }
 
 
-
-
-}
+    // Forms
+    .contactForm form{
+        margin: -100px 0 0 100px;
+        padding: 50px 40px;
+    } 
     
+} 

@@ -3,21 +3,26 @@
     padding: 20px 0;
     display: flex;
     justify-content: space-between;
-    span {
+
+    span,
+    .dropDown {
         visibility: hidden;
     }
-    ul {
-        width: 25rem;
-        display: flex;
-        justify-content: space-between;
-    }
-    a {
+    
+    h5 a {
         border-bottom: 4px solid transparent;
         transition: 0.3s;
         &:hover,
         &:focus {
         border-bottom: 4px solid $primary;
         cursor: pointer;
+        }
     }
+    
+
+    .fullSizeMenu {
+        width: 25rem;
+        display: flex;
+        justify-content: space-between;
     }
 }

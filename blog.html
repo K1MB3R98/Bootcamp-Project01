@@ -16,30 +16,13 @@
         <!-- Start: wrapper -->
         <div class="wrapper">
     
-                <!-- Navigation Bar -->
-                <nav class="navBar">
-                    <h4><a href="./index.html">Sanctuary Helpers</a></h4>
-                
-                    <div class="dropDown">
-                        <i class="fas fa-bars fa-2x"></i>
-                        <ul class="dropDownContent">
-                            <li>
-                                <h5><a href="./index.html">Home</a></h5>
-                            </li>
-                            <li>
-                                <h5><a href="./index.html#about">About</a></h5>
-                            </li>
-                            <li>
-                                <h5><a href="./blog.html">Blog</a></h5>
-                            </li>
-                            <li>
-                                <h5><a href="./contact.html">Contact</a></h5>
-                            </li>
-                        </ul>
-                    </div>
-                
-                
-                    <ul class=fullSizeMenu>
+            <!-- Navigation Bar -->
+            <nav class="navBar">
+                <h4><a href="./index.html">Sanctuary Helpers</a></h4>
+            
+                <div class="dropDown">
+                    <i class="fas fa-bars fa-2x"></i>
+                    <ul class="dropDownContent">
                         <li>
                             <h5><a href="./index.html">Home</a></h5>
                         </li>
@@ -53,8 +36,25 @@
                             <h5><a href="./contact.html">Contact</a></h5>
                         </li>
                     </ul>
-                </nav>
-                <!-- End: navBar -->
+                </div>
+            
+            
+                <ul class=fullSizeMenu>
+                    <li>
+                        <h5><a href="./index.html">Home</a></h5>
+                    </li>
+                    <li>
+                        <h5><a href="./index.html#about">About</a></h5>
+                    </li>
+                    <li>
+                        <h5><a href="./blog.html">Blog</a></h5>
+                    </li>
+                    <li>
+                        <h5><a href="./contact.html">Contact</a></h5>
+                    </li>
+                </ul>
+            </nav>
+            <!-- End: navBar -->
        
             <h1>Blog</h1>
         </div>
@@ -108,31 +108,38 @@
 
         <!-- Start: Comments -->
         <section class="comments">
-            <div class="wrapper">
+            <div class="wrapper" id="insertNewComment">
                 <h3>Comments</h3>
 
-                <!-- Comment 1 -->
-                <div class="commentFlex">
-                    <div class="commentImg">
-                        <img src="./assets/comment-image.jpg" alt="A commenter's user-graphic.">
+                <div class="userComments">
+                    <!-- Comment 1 -->
+                    <div class="commentFlex">
+                        <div class="commentImg">
+                            <img src="./assets/comment-image.jpg" alt="A commenter's user-graphic.">
+                        </div>
+                        <div class="commentText">
+                            <p class="dateAllCaps">Tuesday October 9th, 2019 by Davin</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi omnis aliquid nostrum assumenda praesentium sint in! Illum recusandae facere nihil fuga eveniet reiciendis sapiente exercitationem, nulla debitis, ullam quia odio eligendi dolor?</p>
+                        </div>
                     </div>
-                    <div class="commentText">
-                        <p class="dateAllCaps">Tuesday October 9th, 2019 by Davin</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi omnis aliquid nostrum assumenda praesentium sint in! Illum recusandae facere nihil fuga eveniet reiciendis sapiente exercitationem, nulla debitis, ullam quia odio eligendi dolor?</p>
-                    </div>
-                </div>
 
-                <!-- Comment 2 -->
-                <div class="commentFlex">
-                    <div class="commentImg">
-                        <img src="./assets/comment-image2.jpg" alt="A commenter's user-graphic.">
+                    <!-- Comment 2 -->
+                    <div class="commentFlex">
+                        <div class="commentImg">
+                            <img src="./assets/comment-image2.jpg" alt="A commenter's user-graphic.">
+                        </div>
+                    
+                        <div class="commentText">
+                            <p class="dateAllCaps">Wednesday October 10th, 2019 by Lisa</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur excepturi exercitationem eum eius beatae adipisci, doloremque maiores temporibus.</p>
+                        </div>
                     </div>
-                
-                    <div class="commentText">
-                        <p class="dateAllCaps">Wednesday October 10th, 2019 by Lisa</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur excepturi exercitationem eum eius beatae adipisci, doloremque maiores temporibus.</p>
-                    </div>
+
+                    <!-- New comments will be added dynamically here -->
+                    
                 </div>
+                <!-- End: userComments -->
+
 
                 <!-- Start: Comment Form -->
                 <form>

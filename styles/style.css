@@ -998,13 +998,9 @@ form textarea {
     font-size: 1.5rem;
   }
 
-  .groupPrograms img {
-    width: 100%;
-    top: 450px;
-  }
-  .groupPrograms .bannerImage img {
-    border: 2ps solid blue;
-    margin-top: 0;
+  .about .groupPrograms img {
+    top: 650px;
+    left: 30px;
   }
 
   .blogFlex {

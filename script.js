@@ -2,69 +2,77 @@
 // event listener for button press
 document.querySelector('button').addEventListener('click', function(event) {
     event.preventDefault();
-    console.log("Button Clicked"); /* Testing */
 
-    // Testing - find and log all form elements
-    // const allFormInputs = document.querySelector('form');
-    // console.log(allFormInputs);
-
-    // get name input from form, save in variable & console.log
+    // get name input from form, save in variable
     const inputName = document.getElementById('name');
     const userName = inputName.value;
-    // console.log(userName);
 
-    // get comment input from form, save in variable & console.log
+    // get email input from form, save in variable (for reset purposes)
+    const inputEmail = document.getElementById('email');
+
+    // get comment input from form, save in variable
     const inputComment = document.getElementById('comment');
     const userComment = inputComment.value;
-    // console.log(userComment);
-
-    // test putting data on page
-    // const changeTest = document.querySelector('.newCommentText');
-    // changeTest.textContent = `${userName} ${userComment}`;
-    // console.log(changeTest);
 
 
     // if form is not empty --> display the following in Comments section:
     if (userComment !== '') {
         
-        // create new commentFlex div inside  .comments .wrapper
-        // create a div
-        const newCommentFlexDiv = document.createElement("div");
+        // create new commentFlex div inside .comments .wrapper .userComments
+        const newCommentFlex = document.createElement("div");
         // add the div to the end of .userComments div
-        document.querySelector(".comments .wrapper .userComments").appendChild(newCommentFlexDiv);
+        document.querySelector(".comments .wrapper .userComments").appendChild(newCommentFlex);
         // assign a class to this new div
-        newCommentFlexDiv.classList.add('commentFlex');
+        newCommentFlex.classList.add('commentFlex');
         // assign a second class for targeting insertion of next divs
-        newCommentFlexDiv.classList.add('newComment');
-        
+        newCommentFlex.classList.add('newComment');
+        // testing
+        newCommentFlex.style.border = "2px solid red";
 
-        // create newCommentImg div inside .comment .wrapper .userComments .commentFlex/ .newComment
-        const newCommentImgDiv = document.createElement("div");
-        // add newCommentImgDiv
-        document.querySelector(".comments .wrapper .userComments .newComment").appendChild(newCommentImgDiv);
+        // create newCommentImg div inside .comment .wrapper .userComments .commentFlex/.newComment(class)
+        const newCommentImg = document.createElement("div");
+        // add newCommentImg
+        document.querySelector(".comments .wrapper .userComments .newComment").appendChild(newCommentImg);
         // assign a class to this div
-        newCommentImgDiv.classList.add('commentImg');
-        // display new comment user img stand-in
-        newCommentImgDiv.innerHTML = '<i class="fas fa-user fa-4x"></i>';
+        newCommentImg.classList.add('commentImg');
+        // display new comment user img stand-in icon
+        newCommentImg.innerHTML = '<i class="fas fa-user fa-4x"></i>';
+        // add padding to line up icon with other user images
+        newCommentImg.style.border = "2px solid green";
+        newCommentImg.style.padding = "0 10px";
 
 
         // create newCommentText div inside .comment .wrapper. userComments .newComment
-        const newCommentTextDiv = document.createElement("div");
-        // add newCommentTextDiv
-        document.querySelector(".comments .wrapper .userComments .newComment").appendChild(newCommentTextDiv);
+        const newCommentText = document.createElement("div");
+        // add newCommentText
+        document.querySelector(".comments .wrapper .userComments .newComment").appendChild(newCommentText);
         // assign a class to this div
-        newCommentTextDiv.classList.add('commentText');
-        // display new comment user name
-        newCommentTextDiv.textContent = userName;
+        newCommentText.classList.add('commentText');
+        // testing
+        newCommentText.style.border = "2px solid blue";
 
 
+        // create <p> with class "dateAllCaps" inside newCommentText div to display today's date and user name
+        const newDateName = document.createElement("p");
+        // add <p>
+        document.querySelector(".comments .wrapper .userComments .newComment .commentText").appendChild(newDateName);
+        // assign a class to this <p>
+        newDateName.classList.add('dateAllCaps');
+        // display date and new comment user name
+        newDateName.textContent = ` by ${userName}`;
 
+
+        // create <p> inside newCommentText div and display the user's comment
+        const newCommentTextp = document.createElement("p");
+        // add <p>
+        document.querySelector(".comments .wrapper .userComments .newComment .commentText").appendChild(newCommentTextp);
         // display new comment text
-        // newCommentFlexDiv.textContent = userComment;
+        newCommentTextp.textContent = userComment;
 
 
-
-        // clear input after submission
-        // inputElement.value = '';
+        // clear inputs after submission
+        inputName.value = '';
+        inputEmail.value = '';
+        inputComment.value = '';
     }
 });

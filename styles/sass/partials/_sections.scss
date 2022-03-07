@@ -8,8 +8,8 @@ body {
 // Section: Home > Discover
 .discover {
     background-color: $white;
-    .wrapper{
-    padding-top: 250px;
+    .wrapper {
+    padding-top: 400px;
     display: flex;
     justify-content: space-between;
     }
@@ -19,7 +19,7 @@ body {
         margin: 0 75px 150px 0;
     }
     .discoverImg {
-        margin-left: 25px;
+        margin: 25px 0 0 25px;
         img {
             height: 60%;
         }

@@ -447,7 +447,7 @@ body {
   background-color: #F5F5F5;
 }
 .discover .wrapper {
-  padding-top: 250px;
+  padding-top: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -461,7 +461,7 @@ body {
   margin: 0 75px 150px 0;
 }
 .discover .discoverImg {
-  margin-left: 25px;
+  margin: 25px 0 0 25px;
 }
 .discover .discoverImg img {
   height: 60%;
@@ -482,7 +482,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   height: auto;
-  width: calc((100% / 3) - 30px);
+  width: calc(33.3333333333% - 30px);
 }
 .gallery ul li img {
   width: 100%;
